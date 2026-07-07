@@ -15,6 +15,12 @@ public class ToDoTask
         set;
     }
 
+    public bool IsDone
+    {
+        get;
+        set;
+    }
+
     private List<Property> _properties = new List<Property>();
 
     public ToDoTask(string title, string text)
@@ -46,4 +52,10 @@ public class ToDoTask
             }
         }
     }
+
+    public void CompleteTask()
+    {
+        IsDone = true;
+    }
+
 }

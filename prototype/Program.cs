@@ -16,7 +16,7 @@ while (true)
     }
     else if (choice == "2")
     {
-        Info.Overreview(tasks);
+        Info.Overview(tasks);
     }
     else if (choice == "3")
     {
@@ -24,15 +24,18 @@ while (true)
     }
     else if (choice == "4")
     {
+        TaskState.Complete(tasks); 
+    }
+    else if (choice == "5")
+    {
         Console.WriteLine("Quitting program...");
         break;
     }
     else
     {
         Console.WriteLine("Invalid choice, try again.");
-        
     }
-    if (choice != "4")
+    if (choice != "5")
     {
         Console.WriteLine("\nPress any key to continue...");
         Console.ReadKey();

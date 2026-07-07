@@ -35,21 +35,30 @@ public static class AddProperty
         }
 
         Console.WriteLine("Task number: ");
-        int index = int.Parse(Console.ReadLine()) - 1;
+        string input = Console.ReadLine();
 
-        if (index < 0 || index >= tasks.Count)
+        if (int.TryParse(input, out int taskNumber))
         {
-            Console.WriteLine("Invalid task number!");
-            return;
+            int index = taskNumber - 1;
+
+            if (index < 0 || index >= tasks.Count)
+            {
+                Console.WriteLine("Invalid task number!");
+                return;
+            }
+
+            Console.Write("Property name: ");
+            string propertyName = Console.ReadLine();
+
+            Console.Write("Property value: ");
+            string propertyValue = Console.ReadLine();
+
+            tasks[index].AddProperty(new TextProperty(propertyName, propertyValue));            
+            Console.WriteLine("Property added!");
         }
-
-        Console.Write("Property name: ");
-        string propertyName = Console.ReadLine();
-
-        Console.Write("Property value: ");
-        string propertyValue = Console.ReadLine();
-
-        tasks[index].AddProperty(new TextProperty(propertyName, propertyValue));
-        Console.WriteLine("Property added!");
+        else
+        {
+            Console.WriteLine("Invalid input, you must type a number!");
+        }
     }
 }

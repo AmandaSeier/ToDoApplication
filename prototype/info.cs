@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 
 public static class Info {
-    public static void Overreview(List<ToDoTask> tasks)
+    public static void Overview(List<ToDoTask> tasks)
     {
         Console.WriteLine("Your tasks: ");
 
