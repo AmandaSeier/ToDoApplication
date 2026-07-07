@@ -1,37 +1,40 @@
 ﻿using System;
 using System.Collections.Generic;
 
-List<string> tasks = new List<string>();
+List<ToDoTask> tasks = new List<ToDoTask>();
 
 while (true)
 {
-    Console.WriteLine("\n----- TO-DO -----\n");
-    Console.WriteLine("1. Add task");
-    Console.WriteLine("2. Show current tasks");
-    Console.WriteLine("3. End\n");
-    Console.Write("Choose either 1, 2 or 3: ");
+    Console.Clear();
+    Menu.printMenu();
 
     string choice = Console.ReadLine();
 
-    // Adding tasks to the list
     if (choice == "1")
     {
-        addTask.add(tasks);
+        AddTask.Add(tasks);
     }
-    // Access to the task list
     else if (choice == "2")
     {
-        info.overreview(tasks);
+        Info.Overreview(tasks);
     }
-    // End of program
     else if (choice == "3")
     {
-        Console.WriteLine("Closing program ...");
+        AddProperty.Add(tasks);
+    }
+    else if (choice == "4")
+    {
+        Console.WriteLine("Quitting program...");
         break;
     }
-    // Invalid choice
     else
     {
-        Console.WriteLine("Invalid choice, choose either 1, 2, or 3. Try again!!!");
+        Console.WriteLine("Invalid choice, try again.");
+        
+    }
+    if (choice != "4")
+    {
+        Console.WriteLine("\nPress any key to continue...");
+        Console.ReadKey();
     }
 }

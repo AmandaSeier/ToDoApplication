@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
 
-public static class info {
-    public static void overreview(List<string> tasks)
+public static class Info {
+    public static void Overreview(List<ToDoTask> tasks)
     {
         Console.WriteLine("Your tasks: ");
 
@@ -14,7 +14,8 @@ public static class info {
             {
                 for (int i = 0; i < tasks.Count; i++)
                 {
-                    Console.WriteLine($"{i + 1}. {tasks[i]}");
+                    tasks[i].ShowTask();
+                    Console.WriteLine();
                 }
             }
     }
