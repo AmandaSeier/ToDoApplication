@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 
 public static class TaskState {
-    public static void Complete(List<ToDoTask> tasks)
+    public static void Complete(List<ToDoTask> tasks, List<ToDoTask> finishedTasks)
     {
         if (tasks.Count == 0)
         {
@@ -12,7 +12,7 @@ public static class TaskState {
 
         for (int i = 0; i < tasks.Count; i++)
         {
-            Console.Write($"[{i + 1}]");
+            Console.Write($"{i + 1}. ");
             tasks[i].ShowTask();
             Console.WriteLine();
         }
@@ -28,6 +28,8 @@ public static class TaskState {
             {
                 tasks[index].CompleteTask();
                 Console.WriteLine($"Success! '{tasks[index].Title}' has been marked as done!");
+                finishedTasks.Add(tasks[index]);
+                tasks.RemoveAt(index);
             }
             else
             {

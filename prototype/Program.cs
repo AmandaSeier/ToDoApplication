@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 
 List<ToDoTask> tasks = new List<ToDoTask>();
+List<ToDoTask> finishedTasks = new List<ToDoTask>();
 
 while (true)
 {
     Console.Clear();
-    Menu.printMenu();
+    Menu.PrintMenu();
 
     string choice = Console.ReadLine();
 
@@ -24,9 +25,13 @@ while (true)
     }
     else if (choice == "4")
     {
-        TaskState.Complete(tasks); 
+        TaskState.Complete(tasks, finishedTasks); 
     }
     else if (choice == "5")
+    {
+        Info.FinishedOverview(finishedTasks);
+    }        
+    else if (choice == "6")
     {
         Console.WriteLine("Quitting program...");
         break;
@@ -35,7 +40,7 @@ while (true)
     {
         Console.WriteLine("Invalid choice, try again.");
     }
-    if (choice != "5")
+    if (choice != "6")
     {
         Console.WriteLine("\nPress any key to continue...");
         Console.ReadKey();
