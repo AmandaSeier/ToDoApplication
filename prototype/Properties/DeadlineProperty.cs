@@ -3,13 +3,14 @@ using System.Collections.Generic;
 
 public class DeadlineProperty : Property
 {
-    public DateTime Deadline
-    {
-        get;
-        set;
+    public DateTime Deadline 
+    { 
+        get; 
+        set; 
     }
 
-    public DeadlineProperty(string name, DateTime deadline) : base(name)
+    // Vi fjerner 'string name' parameteren og skriver "Deadline" direkte til base
+    public DeadlineProperty(DateTime deadline) : base("Deadline")
     {
         Deadline = deadline;
     }

@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
 
-public static class Info {
+public static class Info 
+{
     public static void Overview(List<ToDoTask> tasks)
     {
         if (tasks.Count == 0)

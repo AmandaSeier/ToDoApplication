@@ -46,19 +46,63 @@ public static class AddProperty
                 Console.WriteLine("Invalid task number!");
                 return;
             }
+            else
+            {
+                Console.WriteLine("Do you wanna add:\n");
+                Console.WriteLine("1. A Deadline:\n");
+                Console.WriteLine("2. A member:\n");
+                Console.WriteLine("3. Or some text:\n");
 
-            Console.Write("Property name: ");
-            string propertyName = Console.ReadLine();
+                string propertyChoice = Console.ReadLine();
 
-            Console.Write("Property value: ");
-            string propertyValue = Console.ReadLine();
+                if (propertyChoice == "1")
+                {
+                    Console.WriteLine("Deadline (form: dd-MM-yyyy): ");
+                    string dateInput = Console.ReadLine();
 
-            tasks[index].AddProperty(new TextProperty(propertyName, propertyValue));            
-            Console.WriteLine("Property added!");
+                    if (DateTime.TryParse(dateInput, out DateTime addedDeadline))
+                    {
+                        tasks[index].AddProperty(new DeadlineProperty(addedDeadline));
+                        Console.WriteLine("Deadline added!");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid date format! Please try again.");
+                    }
+                    tasks[index].AddProperty(new DeadlineProperty(addedDeadline));
+                }
+                else if (propertyChoice == "2")
+                {
+                    // TODO: Tilføj medlem her
+                    Console.WriteLine("Name of the member: ");
+                    string memberName = Console.ReadLine();
+
+                    Member newMember = new Member(memberName);
+
+                    tasks[index].AddProperty(new MemberProperty(newMember));
+                    Console.WriteLine("Member added!");
+                }
+                else if (propertyChoice == "3")
+                {
+                    Console.WriteLine("Property name: ");
+                    string propertyName = Console.ReadLine();
+
+                    Console.WriteLine("Property value: ");
+                    string propertyValue = Console.ReadLine();
+
+                    tasks[index].AddProperty(new TextProperty(propertyName, propertyValue));            
+                    Console.WriteLine("Property added!");
+                }
+                else
+                {
+                    Console.WriteLine("Invalid choice!");
+                    return;
+                }
+            }
         }
         else
         {
-            Console.WriteLine("Invalid input, you must type a number!");
+            Console.WriteLine("Invalid input, you must type a number!"); 
         }
     }
 }

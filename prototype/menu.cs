@@ -12,7 +12,7 @@ public static class Menu
         Console.WriteLine("4. Mark a task done");
         Console.WriteLine("5. Show finished tasks");
         Console.WriteLine("6. Quit\n");
-        Console.WriteLine("Choose 1, 2, 3 or 4: ");
+        Console.WriteLine("Choose 1, 2, 3, 4, 5 or 6: ");
         Console.WriteLine();
     }
 }

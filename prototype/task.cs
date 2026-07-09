@@ -46,7 +46,7 @@ public class ToDoTask
         else
         {
             Console.WriteLine("Properties: ");
-            for (int i = 0; i < _properties.Count; i++)
+            for (int i = 1; i < _properties.Count; i++)
             {
                 _properties[i].ShowProperty();
             }
