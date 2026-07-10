@@ -49,9 +49,11 @@ public static class AddProperty
             else
             {
                 Console.WriteLine("Do you wanna add:\n");
-                Console.WriteLine("1. A Deadline:\n");
-                Console.WriteLine("2. A member:\n");
-                Console.WriteLine("3. Or some text:\n");
+                Console.WriteLine("1. A Deadline\n");
+                Console.WriteLine("2. A member\n");
+                Console.WriteLine("3. A location\n");
+                Console.WriteLine("4. A priority\n");
+                Console.WriteLine("4. Or some text\n");
 
                 string propertyChoice = Console.ReadLine();
 
@@ -73,7 +75,6 @@ public static class AddProperty
                 }
                 else if (propertyChoice == "2")
                 {
-                    // TODO: Tilføj medlem her
                     Console.WriteLine("Name of the member: ");
                     string memberName = Console.ReadLine();
 
@@ -83,6 +84,36 @@ public static class AddProperty
                     Console.WriteLine("Member added!");
                 }
                 else if (propertyChoice == "3")
+                {
+                    Console.WriteLine("Location: ");
+                    string locationInput = Console.ReadLine();
+
+                    tasks[index].AddProperty(new LocationProperty(locationInput));
+                    Console.WriteLine("Location added!");
+                }
+                else if (propertyChoice == "4")
+                {
+                    Console.WriteLine("Pick a priority:\n1. Low\n2. Medium\n3. High");
+                    string priorityInput = Console.ReadLine();
+
+                    PriorityProperty.PriorityLevel chosenLevel;
+
+                    if (priorityInput == "1")
+                    {
+                        chosenLevel = PriorityProperty.PriorityLevel.Low;
+                    }
+                    else if (priorityInput == "2")
+                    {
+                        chosenLevel = PriorityProperty.PriorityLevel.Medium;
+                    }
+                    else
+                    {
+                        chosenLevel = PriorityProperty.PriorityLevel.High;
+                    }
+                    tasks[index].AddProperty(new PriorityProperty(chosenLevel));
+                    Console.WriteLine("Priority added!");
+                }
+                else if (propertyChoice == "5")
                 {
                     Console.WriteLine("Property name: ");
                     string propertyName = Console.ReadLine();
@@ -103,6 +134,7 @@ public static class AddProperty
         else
         {
             Console.WriteLine("Invalid input, you must type a number!"); 
+            return;
         }
     }
 }

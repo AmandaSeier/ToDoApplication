@@ -9,8 +9,12 @@ Still under construction...
 - [x] Displaying active tasks
 - [x] Ability to add properties to a task
   - [x] Deadlines
-  - [ ] People
-  - [ ] Place
-  - [ ] Priority
+  - [x] People
+  - [x] Location
+  - [X] Priority
 - [x] Marking a task as done
-- [ ] Displaying finished tasks
+- [x] Displaying finished tasks
+- [ ] Editing names
+  - [ ] Edit task name
+  - [ ] Edit property names
+  - [ ] Edit description name

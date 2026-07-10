@@ -9,7 +9,6 @@ public class DeadlineProperty : Property
         set; 
     }
 
-    // Vi fjerner 'string name' parameteren og skriver "Deadline" direkte til base
     public DeadlineProperty(DateTime deadline) : base("Deadline")
     {
         Deadline = deadline;
@@ -17,6 +16,6 @@ public class DeadlineProperty : Property
 
     public override void ShowProperty()
     {
-        Console.WriteLine($"{Name}: {Deadline:dd-MM-yyyy}");
+        Console.WriteLine($"{Name}: {Deadline: dd-MM-yyyy}");
     }
 }
