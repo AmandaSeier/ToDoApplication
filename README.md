@@ -18,3 +18,12 @@ Still under construction...
   - [x] Edit task name
   - [x] Edit property names
   - [x] Edit description
+
+## Things to cosider before starting the UI !
+- Menu design?
+- Pick fonts?
+- Pick color scheme?
+- Pop up windows?
+- UI flowchart?
+- UI elements?
+- Window sizing?
