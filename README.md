@@ -7,14 +7,14 @@ Still under construction...
 - [x] Adding tasks to a ToDo List
 - [x] Create a description of a task
 - [x] Displaying active tasks
-- [x] Ability to add properties to a task
+- Ability to add properties to a task
   - [x] Deadlines
   - [x] People
   - [x] Location
   - [X] Priority
 - [x] Marking a task as done
 - [x] Displaying finished tasks
-- [ ] Editing names
-  - [ ] Edit task name
-  - [ ] Edit property names
-  - [ ] Edit description name
+- Chaging names
+  - [x] Edit task name
+  - [x] Edit property names
+  - [x] Edit description

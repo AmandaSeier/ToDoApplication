@@ -11,8 +11,9 @@ public static class Menu
         Console.WriteLine("3. Add property to task");
         Console.WriteLine("4. Mark a task done");
         Console.WriteLine("5. Show finished tasks");
-        Console.WriteLine("6. Quit\n");
-        Console.WriteLine("Choose 1, 2, 3, 4, 5 or 6: ");
+        Console.WriteLine("6. Edit a task");
+        Console.WriteLine("7. Quit\n");
+        Console.WriteLine("Choose 1, 2, 3, 4, 5, 6 or 7: ");
         Console.WriteLine();
     }
 }

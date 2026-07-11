@@ -3,6 +3,8 @@ using System.Collections.Generic;
 
 public class ToDoTask
 {
+    public List<Property> Properties => _properties;
+
     public string Title
     {
         get;

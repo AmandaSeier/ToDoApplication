@@ -33,6 +33,10 @@ while (true)
     }        
     else if (choice == "6")
     {
+        EditTask.Edit(tasks);
+    }
+    else if (choice == "7")
+    {
         Console.WriteLine("Quitting program...");
         break;
     }
@@ -40,7 +44,7 @@ while (true)
     {
         Console.WriteLine("Invalid choice, try again.");
     }
-    if (choice != "6")
+    if (choice != "7")
     {
         Console.WriteLine("\nPress any key to continue...");
         Console.ReadKey();

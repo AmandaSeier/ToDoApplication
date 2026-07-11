@@ -53,7 +53,7 @@ public static class AddProperty
                 Console.WriteLine("2. A member\n");
                 Console.WriteLine("3. A location\n");
                 Console.WriteLine("4. A priority\n");
-                Console.WriteLine("4. Or some text\n");
+                Console.WriteLine("5. Or some text\n");
 
                 string propertyChoice = Console.ReadLine();
 
