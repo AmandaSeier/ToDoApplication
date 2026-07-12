@@ -1,20 +1,21 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         x:Class="ToDoApplication.Views.MainWindow"
-        Title="ToDo Application" Width="400" Height="450"
-        WindowStartupLocation="CenterScreen">
+        Title="ToDo Application" Width="450" Height="600"
+        WindowStartupLocation="CenterScreen"
+        Background="{StaticResource BackgroundMainMenu}">
 
     <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="10">
 
-        <TextBlock Text="MAIN MENU" FontSize="25" FontWeight="Bold" HorizontalAlignment="Center" Margin="0, 0, 0, 10"/>
+        <TextBlock Text="MAIN MENU" Foreground="{StaticResource ButtonTextColor}" FontFamily="avares://ToDoApplication/Assets/Fonts/#Roboto Mono" FontWeight="Bold" FontStyle="Italic" FontSize="35" HorizontalAlignment="Center" Margin="0, 0, 0, 10"/>
 
-        <Button Content="Add task" Width="200" HorizontalContentAlignment="Center"></Button>
-        <Button Content="Show current tasks" Width="200" HorizontalContentAlignment="Center"></Button>
-        <Button Content="Add property to task" Width="200" HorizontalContentAlignment="Center"></Button>
-        <Button Content="Mark a task done" Width="200" HorizontalContentAlignment="Center"></Button>
-        <Button Content="Show finished tasks" Width="200" HorizontalContentAlignment="Center"></Button>
-        <Button Content="Edit a task" Width="200" HorizontalContentAlignment="Center"></Button>
-        <Button Content="Quit" Width="200" HorizontalContentAlignment="Center"></Button>
+        <Button Content="Add Task" Background="{StaticResource ButtonColor}" Foreground="{StaticResource ButtonTextColor}" CornerRadius="10" FontFamily="avares://ToDoApplication/Assets/Fonts/#Roboto Mono" Width="200" HorizontalContentAlignment="Center"></Button>
+        <Button Content="Current Tasks" Background="{StaticResource ButtonColor}" Foreground="{StaticResource ButtonTextColor}" CornerRadius="10" FontFamily="avares://ToDoApplication/Assets/Fonts/#Roboto Mono" Width="200" HorizontalContentAlignment="Center"></Button>
+        <Button Content="Add Property" Background="{StaticResource ButtonColor}" Foreground="{StaticResource ButtonTextColor}" CornerRadius="10" FontFamily="avares://ToDoApplication/Assets/Fonts/#Roboto Mono" Width="200" HorizontalContentAlignment="Center"></Button>
+        <Button Content="Finish a Task" Background="{StaticResource ButtonColor}" Foreground="{StaticResource ButtonTextColor}" CornerRadius="10" FontFamily="avares://ToDoApplication/Assets/Fonts/#Roboto Mono" Width="200" HorizontalContentAlignment="Center"></Button>
+        <Button Content="Finished Tasks" Background="{StaticResource ButtonColor}" Foreground="{StaticResource ButtonTextColor}" CornerRadius="10" FontFamily="avares://ToDoApplication/Assets/Fonts/#Roboto Mono" Width="200" HorizontalContentAlignment="Center"></Button>
+        <Button Content="Edit a Task" Background="{StaticResource ButtonColor}" Foreground="{StaticResource ButtonTextColor}" CornerRadius="10" FontFamily="avares://ToDoApplication/Assets/Fonts/#Roboto Mono" Width="200" HorizontalContentAlignment="Center"></Button>
+        <Button Content="Quit" Click="QuitApp" Background="{StaticResource QuitButton}" Foreground="{StaticResource QuitButtonText}" CornerRadius="10" FontFamily="avares://ToDoApplication/Assets/Fonts/#Roboto Mono" Width="200" HorizontalContentAlignment="Center"></Button>
 
     </StackPanel>
     

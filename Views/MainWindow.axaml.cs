@@ -1,4 +1,6 @@
 using Avalonia.Controls;
+// Vi tilføjer denne linje, så koden kender til knap-klik (events)
+using Avalonia.Interactivity;
 
 namespace ToDoApplication.Views
 {
@@ -7,6 +9,15 @@ namespace ToDoApplication.Views
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void QuitApp(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Button_Click(object? sender, RoutedEventArgs e)
+        {
         }
     }
 }
