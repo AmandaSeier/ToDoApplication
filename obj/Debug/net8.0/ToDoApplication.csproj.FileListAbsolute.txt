@@ -54,13 +54,10 @@ C:\Users\amand\OneDrive\Desktop\Andet\Kodning\ToDoApplication\obj\Debug\net8.0\T
 C:\Users\amand\OneDrive\Desktop\Andet\Kodning\ToDoApplication\obj\Debug\net8.0\ToDoApplication.AssemblyInfo.cs
 C:\Users\amand\OneDrive\Desktop\Andet\Kodning\ToDoApplication\obj\Debug\net8.0\ToDoApplication.csproj.CoreCompileInputs.cache
 C:\Users\amand\OneDrive\Desktop\Andet\Kodning\ToDoApplication\obj\Debug\net8.0\ToDoApplication.sourcelink.json
-C:\Users\amand\OneDrive\Desktop\Andet\Kodning\ToDoApplication\obj\Debug\net8.0\Avalonia\references
-C:\Users\amand\OneDrive\Desktop\Andet\Kodning\ToDoApplication\obj\Debug\net8.0\Avalonia\original.dll
-C:\Users\amand\OneDrive\Desktop\Andet\Kodning\ToDoApplication\obj\Debug\net8.0\Avalonia\original.pdb
-C:\Users\amand\OneDrive\Desktop\Andet\Kodning\ToDoApplication\obj\Debug\net8.0\Avalonia\original.ref.dll
-C:\Users\amand\OneDrive\Desktop\Andet\Kodning\ToDoApplication\obj\Debug\net8.0\refint\ToDoApplication.dll
-C:\Users\amand\OneDrive\Desktop\Andet\Kodning\ToDoApplication\obj\Debug\net8.0\ToDoApplication.dll
-C:\Users\amand\OneDrive\Desktop\Andet\Kodning\ToDoApplication\obj\Debug\net8.0\ToDoApplication.pdb
 C:\Users\amand\OneDrive\Desktop\Andet\Kodning\ToDoApplication\obj\Debug\net8.0\ToDoAppl.F2B0D8D1.Up2Date
 C:\Users\amand\OneDrive\Desktop\Andet\Kodning\ToDoApplication\obj\Debug\net8.0\ToDoApplication.genruntimeconfig.cache
 C:\Users\amand\OneDrive\Desktop\Andet\Kodning\ToDoApplication\obj\Debug\net8.0\ref\ToDoApplication.dll
+C:\Users\amand\OneDrive\Desktop\Andet\Kodning\ToDoApplication\bin\Debug\net8.0\Avalonia.Vulkan.dll
+C:\Users\amand\OneDrive\Desktop\Andet\Kodning\ToDoApplication\obj\Debug\net8.0\Avalonia\ToDoApplication.dll
+C:\Users\amand\OneDrive\Desktop\Andet\Kodning\ToDoApplication\obj\Debug\net8.0\Avalonia\ToDoApplication.pdb
+C:\Users\amand\OneDrive\Desktop\Andet\Kodning\ToDoApplication\obj\Debug\net8.0\refint\Avalonia\ToDoApplication.dll
