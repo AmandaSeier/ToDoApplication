@@ -43,4 +43,5 @@ Still under construction...
 ### Figma design prototypes
 #### Task overview 
 Design prototype example made in Figma, showing a few tasks added by my friend Silvija (please don't bully me!!!), and p.s. Anders and I will NOT be helping you with your cleaning :sob:
-<img width="5000" height="1000" alt="ToDo App (1)" src="https://github.com/user-attachments/assets/241ec3f9-7c01-47cc-9821-c45ced8638ea" />
+<img width="1000" height="2009" alt="ToDo App" src="https://github.com/user-attachments/assets/1c1edec3-926d-466c-b3b3-c79c10c047e4" />
+
