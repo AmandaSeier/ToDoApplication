@@ -1,5 +1,4 @@
 using Avalonia.Controls;
-// Vi tilføjer denne linje, så koden kender til knap-klik (events)
 using Avalonia.Interactivity;
 
 namespace ToDoApplication.Views

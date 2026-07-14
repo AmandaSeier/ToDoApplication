@@ -1,22 +1,70 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         x:Class="ToDoApplication.Views.MainWindow"
-        Title="ToDo Application" Width="450" Height="600"
-        WindowStartupLocation="CenterScreen"
-        Background="{StaticResource BackgroundMainMenu}">
+        Title="ToDo Application" Width="1179" Height="2556"
+        WindowStartupLocation="CenterScreen">
 
-    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="10">
+    <Window.Background>
+        <LinearGradientBrush StartPoint="0%,0%" EndPoint="0%,100%">
+            <GradientStop Color="{Binding Source={StaticResource White}, Path=Color}" Offset="0.0"/>
+            <GradientStop Color="{Binding Source={StaticResource Flamingo}, Path=Color}" Offset="1.0"/>
+        </LinearGradientBrush>
+    </Window.Background>
 
-        <TextBlock Text="MAIN MENU" Foreground="{StaticResource ButtonTextColor}" FontFamily="avares://ToDoApplication/Assets/Fonts/#Roboto Mono" FontWeight="Bold" FontStyle="Italic" FontSize="35" HorizontalAlignment="Center" Margin="0, 0, 0, 10"/>
+    <Grid>
+        <Border Width="1000" Height="300" 
+            Background="#40000000" 
+            CornerRadius="150" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Bottom" 
+            Margin="0,0,0,80">
+            
+            <Grid ColumnDefinitions="*,*,*">
+                
+                <Border Grid.Column="0" 
+                    Width="200" Height="200" 
+                    CornerRadius="100" 
+                    Background="{StaticResource DarkBlue}"
+                    BoxShadow="15 15 0 0 #80000000"
+                    HorizontalAlignment="Center" 
+                    Margin="0,0,-100,0"
+                    VerticalAlignment="Center">
 
-        <Button Content="Add Task" Background="{StaticResource ButtonColor}" Foreground="{StaticResource ButtonTextColor}" CornerRadius="10" FontFamily="avares://ToDoApplication/Assets/Fonts/#Roboto Mono" Width="200" HorizontalContentAlignment="Center"></Button>
-        <Button Content="Current Tasks" Background="{StaticResource ButtonColor}" Foreground="{StaticResource ButtonTextColor}" CornerRadius="10" FontFamily="avares://ToDoApplication/Assets/Fonts/#Roboto Mono" Width="200" HorizontalContentAlignment="Center"></Button>
-        <Button Content="Add Property" Background="{StaticResource ButtonColor}" Foreground="{StaticResource ButtonTextColor}" CornerRadius="10" FontFamily="avares://ToDoApplication/Assets/Fonts/#Roboto Mono" Width="200" HorizontalContentAlignment="Center"></Button>
-        <Button Content="Finish a Task" Background="{StaticResource ButtonColor}" Foreground="{StaticResource ButtonTextColor}" CornerRadius="10" FontFamily="avares://ToDoApplication/Assets/Fonts/#Roboto Mono" Width="200" HorizontalContentAlignment="Center"></Button>
-        <Button Content="Finished Tasks" Background="{StaticResource ButtonColor}" Foreground="{StaticResource ButtonTextColor}" CornerRadius="10" FontFamily="avares://ToDoApplication/Assets/Fonts/#Roboto Mono" Width="200" HorizontalContentAlignment="Center"></Button>
-        <Button Content="Edit a Task" Background="{StaticResource ButtonColor}" Foreground="{StaticResource ButtonTextColor}" CornerRadius="10" FontFamily="avares://ToDoApplication/Assets/Fonts/#Roboto Mono" Width="200" HorizontalContentAlignment="Center"></Button>
-        <Button Content="Quit" Click="QuitApp" Background="{StaticResource QuitButton}" Foreground="{StaticResource QuitButtonText}" CornerRadius="10" FontFamily="avares://ToDoApplication/Assets/Fonts/#Roboto Mono" Width="200" HorizontalContentAlignment="Center"></Button>
+                    <Svg Path="avares://ToDoApplication/Assets/Icons/MenuIcon.svg"
+                        Width="120" Height="120"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"/>
+                </Border>
 
-    </StackPanel>
-    
+                <Border Grid.Column="1" 
+                    Width="200" Height="200" 
+                    CornerRadius="100" 
+                    Background="{StaticResource Blue}" 
+                    BoxShadow="15 15 0 0 #80000000"
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center">
+
+                    <Svg Path="avares://ToDoApplication/Assets/Icons/PlusIcon.svg"
+                        Width="160" Height="160"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"/>
+                </Border>
+                    
+                <Border Grid.Column="2" 
+                    Width="200" Height="200" 
+                    CornerRadius="100" 
+                    Background="{StaticResource Blue}"
+                    BoxShadow="15 15 0 0 #80000000"
+                    Margin="0,0,100,0" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center">
+
+                    <Svg Path="avares://ToDoApplication/Assets/Icons/HistoryIcon.svg"
+                        Width="125" Height="125"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"/>
+                </Border>    
+            </Grid>
+        </Border>
+    </Grid>
 </Window>

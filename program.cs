@@ -1,19 +1,21 @@
-﻿using System;
-using Avalonia;
+﻿using Avalonia;
+using System;
 
-namespace ToDoApplication;
-
-class Program
+namespace ToDoApplication
 {
-    [STAThread]
-    public static void Main(string[] args) => BuildAvaloniaApp()
-        .StartWithClassicDesktopLifetime(args);
+    internal class Program
+    {
+        [STAThread]
+        public static void Main(string[] args) => BuildAvaloniaApp()
+            .StartWithClassicDesktopLifetime(args);
 
-    public static AppBuilder BuildAvaloniaApp()
-        => AppBuilder.Configure<App>()
-            .UsePlatformDetect()
-            .LogToTrace();
+        public static AppBuilder BuildAvaloniaApp()
+            => AppBuilder.Configure<App>()
+                .UsePlatformDetect()
+                .LogToTrace();
+    }
 }
+
 
 // PROTOTYPE 
 /*
