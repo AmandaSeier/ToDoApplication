@@ -23,7 +23,7 @@ Still under construction...
 
 ## Design considerations !
 ### What to think about
-- Menu design?
+- Menu designs?
 - Pick fonts?
 - Pick color scheme?
 - Pop up windows?
@@ -37,8 +37,9 @@ Still under construction...
 <img width="1600" height="1200" alt="Color Scheme ToDo App" src="https://github.com/user-attachments/assets/9fafc843-5a6f-4652-aefb-fa7f45a35603" />
 
 ### Fonts
-- Roboto Mono font family
-<img width="911" height="798" alt="image" src="https://github.com/user-attachments/assets/65a02057-6975-4365-8873-e69d7e39c3a6" />
+- Asta Sans font family
+<img width="1352" height="676" alt="image" src="https://github.com/user-attachments/assets/08d2f746-ec28-4871-9573-4a0d9bff8955" />
 
 ### Figma design prototypes
-- TBA...
+#### Task overview 
+<img width="1000" height="2009" alt="ToDo App (1)" src="https://github.com/user-attachments/assets/241ec3f9-7c01-47cc-9821-c45ced8638ea" />
