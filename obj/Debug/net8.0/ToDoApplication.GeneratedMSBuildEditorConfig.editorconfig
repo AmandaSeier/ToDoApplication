@@ -33,5 +33,8 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [C:/Users/amand/OneDrive/Desktop/Andet/Kodning/ToDoApplication/Views/AddTaskWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/amand/OneDrive/Desktop/Andet/Kodning/ToDoApplication/Views/FinishedTasksWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/amand/OneDrive/Desktop/Andet/Kodning/ToDoApplication/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

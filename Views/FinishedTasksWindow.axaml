@@ -1,7 +1,7 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        x:Class="ToDoApplication.Views.AddTaskWindow"
-        Title="Add Task" Width="1179" Height="2556"
+        x:Class="ToDoApplication.Views.FinishedTasksWindow"
+        Title="Finished Tasks" Width="1179" Height="2556"
         WindowStartupLocation="CenterScreen">
 
     <Window.Background>

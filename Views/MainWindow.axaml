@@ -7,64 +7,127 @@
     <Window.Background>
         <LinearGradientBrush StartPoint="0%,0%" EndPoint="0%,100%">
             <GradientStop Color="{Binding Source={StaticResource White}, Path=Color}" Offset="0.0"/>
-            <GradientStop Color="{Binding Source={StaticResource Flamingo}, Path=Color}" Offset="1.0"/>
+            <GradientStop Color="{Binding Source={StaticResource Aqua}, Path=Color}" Offset="1.0"/>
         </LinearGradientBrush>
     </Window.Background>
 
     <Grid>
-        <Border Width="1000" Height="300" 
-            Background="#40000000" 
-            CornerRadius="150" 
-            HorizontalAlignment="Center" 
-            VerticalAlignment="Bottom" 
-            Margin="0,0,0,80">
-            
-            <Grid ColumnDefinitions="*,*,*">
-                
-                <Border Grid.Column="0" 
-                    Width="200" Height="200" 
-                    CornerRadius="100" 
-                    Background="{StaticResource DarkBlue}"
-                    BoxShadow="15 15 0 0 #80000000"
-                    HorizontalAlignment="Center" 
-                    Margin="0,0,-100,0"
-                    VerticalAlignment="Center">
 
-                    <Svg Path="avares://ToDoApplication/Assets/Icons/MenuIcon.svg"
-                        Width="120" Height="120"
-                        HorizontalAlignment="Center"
-                        VerticalAlignment="Center"/>
+        <Border Width="1000" Height="1800"
+                Background="#72000000"
+                CornerRadius="125"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"/>
+
+        <Border Width="650" Height="275"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="10,10,0,0"
+                Background="#40000000">
+            <Border.Clip>
+                <PathGeometry Figures="
+                    M0,0
+                    L650,0
+                    L650,175
+                    Q650,275 550,275
+                    L0,275
+                    Z"/>
+            </Border.Clip>
+        </Border>
+
+        <Border Width="650" Height="275"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top">
+
+            <Border Background="{StaticResource DarkBlue}">
+                <Border.Clip>
+                    <PathGeometry Figures="
+                        M0,0
+                        L630,0
+                        L630,155
+                        Q630,255 530,255
+                        L0,255
+                        Z"/>
+                </Border.Clip>
+
+                <StackPanel Margin="40,40,0,0">
+
+                    <TextBlock Text="Tasks"
+                               FontFamily="{StaticResource GoogleSans}"
+                               FontWeight="Bold"
+                               FontSize="136"
+                               Margin="80,-20,0,0"
+                               Foreground="White"/>
+                </StackPanel>
+            </Border>
+        </Border>
+
+        <Border Width="775" Height="225"
+                Background="#40000000"
+                CornerRadius="125"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom"
+                Margin="0,0,0,80">
+
+            <Grid ColumnDefinitions="Auto,Auto,Auto"
+                  HorizontalAlignment="Center"
+                  VerticalAlignment="Center">
+
+                <Border Grid.Column="0"
+                        Width="150" Height="150"
+                        CornerRadius="100"
+                        Background="{StaticResource DarkBlue}"
+                        BoxShadow="15 15 0 0 #80000000"
+                        Margin="0,-10,60,0">
+
+                    <Button Background="Transparent"
+                            Padding="0"
+                            HorizontalContentAlignment="Center"
+                            VerticalContentAlignment="Center">
+                        <Svg Path="avares://ToDoApplication/Assets/Icons/MenuIcon.svg"
+                             Width="90" Height="90"
+                             Margin="25,3,0,0"/>
+                    </Button>
                 </Border>
 
-                <Border Grid.Column="1" 
-                    Width="200" Height="200" 
-                    CornerRadius="100" 
-                    Background="{StaticResource Blue}" 
-                    BoxShadow="15 15 0 0 #80000000"
-                    HorizontalAlignment="Center" 
-                    VerticalAlignment="Center">
+                <Border Grid.Column="1"
+                        Width="150" Height="150"
+                        CornerRadius="100"
+                        Background="{StaticResource Blue}"
+                        BoxShadow="15 15 0 0 #80000000"
+                        Margin="0,-10,0,0">
 
-                    <Svg Path="avares://ToDoApplication/Assets/Icons/PlusIcon.svg"
-                        Width="160" Height="160"
-                        HorizontalAlignment="Center"
-                        VerticalAlignment="Center"/>
+                    <Button Background="Transparent"
+                            Padding="0"
+                            HorizontalContentAlignment="Center"
+                            VerticalContentAlignment="Center"
+                            Click="AddTaskWindow">
+                        <Svg Path="avares://ToDoApplication/Assets/Icons/PlusIcon.svg"
+                             Width="100" Height="100"
+                             Margin="25,-4,0,0"/>
+                    </Button>
                 </Border>
-                    
-                <Border Grid.Column="2" 
-                    Width="200" Height="200" 
-                    CornerRadius="100" 
-                    Background="{StaticResource Blue}"
-                    BoxShadow="15 15 0 0 #80000000"
-                    Margin="0,0,100,0" 
-                    HorizontalAlignment="Center" 
-                    VerticalAlignment="Center">
 
-                    <Svg Path="avares://ToDoApplication/Assets/Icons/HistoryIcon.svg"
-                        Width="125" Height="125"
-                        HorizontalAlignment="Center"
-                        VerticalAlignment="Center"/>
-                </Border>    
+                <Border Grid.Column="2"
+                        Width="150" Height="150"
+                        CornerRadius="100"
+                        Background="{StaticResource Blue}"
+                        BoxShadow="15 15 0 0 #80000000"
+                        Margin="60,-10,0,0">
+
+                    <Button Background="Transparent"
+                            Padding="0"
+                            HorizontalContentAlignment="Center"
+                            VerticalContentAlignment="Center"
+                            Click="FinishedTasksWindow">
+                        <Svg Path="avares://ToDoApplication/Assets/Icons/HistoryIcon.svg"
+                             Width="100" Height="100"
+                             Margin="25,-3,0,0"/>
+                    </Button>
+                </Border>
+
             </Grid>
         </Border>
+
     </Grid>
 </Window>
