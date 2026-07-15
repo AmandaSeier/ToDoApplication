@@ -15,19 +15,6 @@ namespace ToDoApplication.Views
             this.Close();
         }
 
-        private void AddTaskWindow(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
-        {
-            var window = new AddTaskWindow();
-            window.Show();
-        }
-
-        private void FinishedTasksWindow(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
-        {
-            var window = new FinishedTasksWindow();
-            window.Show();
-        }
-
-
         private void Button_Click(object? sender, RoutedEventArgs e)
         {
         }
