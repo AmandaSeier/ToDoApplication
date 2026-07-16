@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using ToDoApplication.Models.properties;
 using ToDoApplication.Models;
+using Microsoft.VisualBasic;
 
 public static class EditTask
 {
@@ -126,7 +127,10 @@ public static class EditTask
                     else if (newChoice == "4")
                     {
                         Console.WriteLine("Enter a new location: ");
-                        string newLocation = Console.ReadLine();
+                        string? newLocation = Console.ReadLine();
+
+                        if (string.IsNullOrWhiteSpace(newLocation))
+                            throw new ArgumentException("Location cannot be empty.");
 
                         tasks[index].AddProperty(new LocationProperty(newLocation));
                         Console.WriteLine("New location set!");

@@ -30,6 +30,9 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [C:/Users/amand/OneDrive/Desktop/Andet/Kodning/ToDoApplication/Assets/Colors/Colors.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/amand/OneDrive/Desktop/Andet/Kodning/ToDoApplication/Assets/Fonts/Fonts.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/amand/OneDrive/Desktop/Andet/Kodning/ToDoApplication/Views/AddTaskWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 

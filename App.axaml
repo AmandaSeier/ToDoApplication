@@ -1,26 +1,15 @@
 <Application xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              x:Class="ToDoApplication.App"
-             RequestedThemeVariant="Default">
+             RequestedThemeVariant="Light">
   
     <Application.Resources>
         <ResourceDictionary>
 
             <ResourceDictionary.MergedDictionaries>
                 <ResourceInclude Source="avares://ToDoApplication/Assets/Colors/Colors.axaml"/>
+                <ResourceInclude Source="avares://ToDoApplication/Assets/Fonts/Fonts.axaml"/>
             </ResourceDictionary.MergedDictionaries>
-
-            <FontFamily x:Key="GoogleSans">
-                avares://ToDoApplication/Assets/Fonts/GoogleSansFlex_9pt-Black.ttf#Google Sans Flex,
-                avares://ToDoApplication/Assets/Fonts/GoogleSansFlex_9pt-Bold.ttf#Google Sans Flex,
-                avares://ToDoApplication/Assets/Fonts/GoogleSansFlex_9pt-ExtraBold.ttf#Google Sans Flex,
-                avares://ToDoApplication/Assets/Fonts/GoogleSansFlex_9pt-ExtraLight.ttf#Google Sans Flex,
-                avares://ToDoApplication/Assets/Fonts/GoogleSansFlex_9pt-Light.ttf#Google Sans Flex,
-                avares://ToDoApplication/Assets/Fonts/GoogleSansFlex_9pt-Medium.ttf#Google Sans Flex,
-                avares://ToDoApplication/Assets/Fonts/GoogleSansFlex_9pt-Regular.ttf#Google Sans Flex,
-                avares://ToDoApplication/Assets/Fonts/GoogleSansFlex_9pt-SemiBold.ttf#Google Sans Flex,
-                avares://ToDoApplication/Assets/Fonts/GoogleSansFlex_9pt-Thin.ttf#Google Sans Flex
-            </FontFamily>
 
         </ResourceDictionary>
     </Application.Resources>

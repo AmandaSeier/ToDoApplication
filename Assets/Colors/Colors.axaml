@@ -1,11 +1,18 @@
 <ResourceDictionary xmlns="https://github.com/avaloniaui"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  
-  <SolidColorBrush x:Key="DarkBlue">#1D3557</SolidColorBrush>
-  <SolidColorBrush x:Key="Aqua">#A8DADC</SolidColorBrush>
-  <SolidColorBrush x:Key="Blue">#457B9D</SolidColorBrush>
-  <SolidColorBrush x:Key= "Red">#E63946</SolidColorBrush>
-  <SolidColorBrush x:Key="Flamingo">#EC9A9A</SolidColorBrush>
-  <SolidColorBrush x:Key="White">#F1FAEE</SolidColorBrush>
-  
+
+    <Color x:Key="WhiteColor">#F1FAEE</Color>
+    <Color x:Key="AquaColor">#A8DADC</Color>
+    <Color x:Key="DarkBlueColor">#1D3557</Color>
+    <Color x:Key="BlueColor">#457B9D</Color>
+    <Color x:Key="RedColor">#E63946</Color>
+    <Color x:Key="FlamingoColor">#EC9A9A</Color>
+
+    <SolidColorBrush x:Key="WhiteBrush" Color="{StaticResource WhiteColor}" />
+    <SolidColorBrush x:Key="AquaBrush" Color="{StaticResource AquaColor}" />
+    <SolidColorBrush x:Key="DarkBlue" Color="{StaticResource DarkBlueColor}" />
+    <SolidColorBrush x:Key="Blue" Color="{StaticResource BlueColor}" />
+    <SolidColorBrush x:Key="RedBrush" Color="{StaticResource RedColor}" />
+    <SolidColorBrush x:Key="FlamingoBrush" Color="{StaticResource FlamingoColor}" />
+
 </ResourceDictionary>

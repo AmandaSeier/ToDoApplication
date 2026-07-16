@@ -10,18 +10,13 @@ namespace ToDoApplication.Views
             InitializeComponent();
         }
 
-        private void QuitApp(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
-
-        private void AddTaskWindow(object? sender, RoutedEventArgs e)
+        public void AddTaskWindow(object? sender, RoutedEventArgs e)
         {
             var window = new AddTaskWindow();
             window.Show();
         }
 
-        private void FinishedTasksWindow(object? sender, RoutedEventArgs e)
+        public void FinishedTasksWindow(object? sender, RoutedEventArgs e)
         {
             var window = new FinishedTasksWindow();
             window.Show();

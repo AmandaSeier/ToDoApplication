@@ -1,0 +1,12 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <FontFamily x:Key="GoogleSans">
+        avares://ToDoApplication/Assets/Fonts#Google Sans
+    </FontFamily>
+
+    <FontFamily x:Key="GoogleSansItalic">
+        avares://ToDoApplication/Assets/Fonts#Google Sans Italic
+    </FontFamily>
+
+</ResourceDictionary>
