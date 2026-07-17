@@ -21,5 +21,9 @@ namespace ToDoApplication.Views
             var window = new FinishedTasksWindow();
             window.Show();
         }
+        private void MenuButtonOpen(object sender, RoutedEventArgs e)
+        {
+            PopupMenu.IsOpen = !PopupMenu.IsOpen;
+        }
     }
 }
