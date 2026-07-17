@@ -55,34 +55,16 @@
                    Foreground="{StaticResource Blue}"
                    HorizontalAlignment="Right"
                    VerticalAlignment="Top"
-                   Margin="20,20,22,0">
-                    <TextBlock.Effect>
-                        <DropShadowDirectionEffect
-                        ShadowDepth="0"
-                        Direction="0"
-                        Color="Black"
-                        Opacity="0.5"
-                        BlurRadius="1"/>
-                    </TextBlock.Effect>
-        </TextBlock>
+                   Margin="20,20,22,0"/>
 
         <TextBlock x:Name="WeekdayText"
-                    FontFamily="{StaticResource VietnamPro}"
-                    FontSize="10"
-                    FontWeight="Light"
-                    Foreground="{StaticResource Blue}"
-                    HorizontalAlignment="Right"
-                    VerticalAlignment="Top"
-                    Margin="20,35,22,0">
-                    <TextBlock.Effect>
-                        <DropShadowDirectionEffect
-                        ShadowDepth="0"
-                        Direction="0"
-                        Color="Black"
-                        Opacity="0.5"
-                        BlurRadius="1"/>
-                    </TextBlock.Effect>
-        </TextBlock>
+                   FontFamily="{StaticResource VietnamPro}"
+                   FontSize="10"
+                   FontWeight="Light"
+                   Foreground="{StaticResource Blue}"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Top"
+                   Margin="20,35,22,0"/>
 
         <TextBlock x:Name="DateText"
                    FontFamily="{StaticResource VietnamPro}"
@@ -91,16 +73,7 @@
                    Foreground="{StaticResource Blue}"
                    HorizontalAlignment="Right"
                    VerticalAlignment="Top"
-                   Margin="20,45,22,0">
-                    <TextBlock.Effect>
-                        <DropShadowDirectionEffect
-                        ShadowDepth="0"
-                        Direction="0"
-                        Color="Black"
-                        Opacity="0.5"
-                        BlurRadius="1"/>
-                    </TextBlock.Effect>
-        </TextBlock>
+                   Margin="20,45,22,0"/>
 
         <Border Background="{StaticResource DarkBlue}"
                 Width="260"
@@ -109,6 +82,82 @@
                 CornerRadius="15,15,0,0"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Bottom"/>
+
+        <Grid x:Name="PopupRoot"
+              Width="55"
+              Height="182"
+              HorizontalAlignment="Right"
+              VerticalAlignment="Bottom"
+              Margin="0,0,30,53"
+              IsVisible="False"
+              ZIndex="0">
+
+            <Border Background="{StaticResource DarkBlue}"
+                    Opacity="0.25"
+                    Width="55"
+                    Height="182"
+                    CornerRadius="30,30,0,0"/>
+
+            <StackPanel Height="150"
+                        Width="55"
+                        Orientation="Vertical"
+                        Spacing="6"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Top"
+                        Margin="0,20,0,0">
+
+                <Border Width="38" Height="38"
+                        CornerRadius="20"
+                        Background="{StaticResource DarkBlue}">
+                    <Button Background="Transparent">
+                        <Svg Path="avares://ToDoApplication/Assets/Icons/AccountIcon.svg"
+                             Width="26" Height="26"/>
+                    </Button>
+                </Border>
+
+                <Border Width="38" Height="38"
+                        CornerRadius="20"
+                        Background="{StaticResource DarkBlue}">
+                    <Button Background="Transparent">
+                        <Svg Path="avares://ToDoApplication/Assets/Icons/SettingsIcon.svg"
+                             Width="26" Height="26"/>
+                    </Button>
+                </Border>
+
+                <Border Width="38" Height="38"
+                        CornerRadius="20"
+                        Background="{StaticResource DarkBlue}">
+                    <Button Background="Transparent">
+                        <Svg Path="avares://ToDoApplication/Assets/Icons/EditIcon.svg"
+                             Width="26" Height="26"/>
+                    </Button>
+                </Border>
+
+            </StackPanel>
+
+        </Grid>
+
+        <Border Width="55"
+                Height="57"
+                Background="{StaticResource DarkBlue}"
+                CornerRadius="40"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Margin="0,0,30,25"
+                ZIndex="1">
+
+            <Grid HorizontalAlignment="Center"
+                  VerticalAlignment="Center">
+
+                <Button x:Name="MenuButton"
+                        Background="Transparent"
+                        Click="MenuButtonOpen">
+                    <Svg Path="avares://ToDoApplication/Assets/Icons/MenuIcon.svg"
+                         Width="30" Height="30"/>
+                </Button>
+
+            </Grid>
+        </Border>
 
         <Border Width="109"
                 Height="57"
@@ -128,12 +177,9 @@
                         CornerRadius="20"
                         Background="{StaticResource WhiteBrush}">
                     <Button Background="Transparent"
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center"
                             Click="FinishedTasksWindow">
                         <Svg Path="avares://ToDoApplication/Assets/Icons/HistoryIcon.svg"
-                             Width="26"
-                             Height="26"/>
+                             Width="26" Height="26"/>
                     </Button>
                 </Border>
 
@@ -142,107 +188,14 @@
                         CornerRadius="20"
                         Background="{StaticResource WhiteBrush}">
                     <Button Background="Transparent"
-                            HorizontalContentAlignment="Center"
-                            VerticalContentAlignment="Center"
                             Click="AddTaskWindow">
                         <Svg Path="avares://ToDoApplication/Assets/Icons/PlusIcon.svg"
-                             Width="26"
-                             Height="26"/>
+                             Width="26" Height="26"/>
                     </Button>
                 </Border>
 
             </StackPanel>
         </Border>
-
-        <Border Width="55"
-                Height="57"
-                Background="{StaticResource DarkBlue}"
-                CornerRadius="40"
-                HorizontalAlignment="Right"
-                VerticalAlignment="Bottom"
-                Margin="0,0,30,25">
-
-            <Grid HorizontalAlignment="Center"
-                  VerticalAlignment="Center">
-
-                <Button x:Name="MenuButton"
-                        Background="Transparent"
-                        HorizontalContentAlignment="Center"
-                        VerticalContentAlignment="Center"
-                        Click="MenuButtonOpen">
-                    <Svg Path="avares://ToDoApplication/Assets/Icons/MenuIcon.svg"
-                         Width="30"
-                         Height="30"/>
-                </Button>
-
-            </Grid>
-        </Border>
-
-        <Popup x:Name="PopupMenu"
-               Placement="Top"
-               PlacementTarget="{Binding #MenuButton}"
-               IsOpen="False"
-               VerticalOffset="15"
-               IsLightDismissEnabled="True">
-
-            <Grid Width="55"
-                  Height="185"
-                  HorizontalAlignment="Right"
-                  VerticalAlignment="Bottom">
-
-                <Border Background="Black"
-                        Width="55"
-                        Height="150"
-                        Opacity="0.25"
-                        CornerRadius="30"
-                        Margin="0,0,0,20"/>
-
-                <StackPanel Height="150"
-                            Width="55"
-                            Orientation="Vertical"
-                            Spacing="6"
-                            HorizontalAlignment="Center"
-                            VerticalAlignment="Center"
-                            Margin="0,0,0,-5">
-
-                    <Border Width="38"
-                            Height="38"
-                            CornerRadius="20"
-                            Background="{StaticResource DarkBlue}">
-                        <Button Background="Transparent">
-                            <Svg Path="avares://ToDoApplication/Assets/Icons/AccountIcon.svg"
-                                 Width="26"
-                                 Height="26"/>
-                        </Button>
-                    </Border>
-
-                    <Border Width="38"
-                            Height="38"
-                            CornerRadius="20"
-                            Background="{StaticResource DarkBlue}">
-                        <Button Background="Transparent">
-                            <Svg Path="avares://ToDoApplication/Assets/Icons/SettingsIcon.svg"
-                                 Width="26"
-                                 Height="26"/>
-                        </Button>
-                    </Border>
-
-                    <Border Width="38"
-                            Height="38"
-                            CornerRadius="20"
-                            Background="{StaticResource DarkBlue}">
-                        <Button Background="Transparent">
-                            <Svg Path="avares://ToDoApplication/Assets/Icons/EditIcon.svg"
-                                 Width="26"
-                                 Height="26"/>
-                        </Button>
-                    </Border>
-
-                </StackPanel>
-
-            </Grid>
-
-        </Popup>
 
     </Grid>
 </Window>
