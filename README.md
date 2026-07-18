@@ -1,4 +1,4 @@
-# NØW (app name, "NØW" from the english word "now" (danish; "nu"), but in a with a touch of scandinavia)
+# NØW (app name, "NØW" from the english word "now" (danish; "nu"), but with a touch of scandinavia)
 
 My very first project written in C#! A TODO application to give you an overview of your daily tasks! 
 
