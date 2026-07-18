@@ -1,0 +1,203 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ToDoApplication.Views.HomeView">
+
+    <Grid>
+
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0%,0%" EndPoint="0%,100%">
+                <GradientStop Color="{StaticResource WhiteColor}" Offset="0.0"/>
+                <GradientStop Color="{StaticResource AquaColor}" Offset="1.0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Border Background="Black"
+                Opacity="0.25"
+                Width="150"
+                Height="75"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                CornerRadius="0,0,36,0"/>
+
+        <Border Background="{StaticResource DarkBlue}"
+                Width="145"
+                Height="70"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                CornerRadius="0,0,35,0"/>
+
+        <TextBlock Text="Tasks"
+                   FontFamily="{StaticResource VietnamPro}"
+                   FontSize="36"
+                   FontWeight="SemiBold"
+                   Foreground="{StaticResource RedColor}"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Margin="20,10,0,0"/>
+
+        <TextBlock Text="Tasks"
+                   FontFamily="{StaticResource VietnamPro}"
+                   FontSize="36"
+                   FontWeight="SemiBold"
+                   Foreground="{StaticResource FlamingoBrush}"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Margin="18,8,0,0"/>
+
+        <TextBlock x:Name="GreetingText"
+                   FontFamily="{StaticResource VietnamPro}"
+                   FontSize="14"
+                   FontWeight="SemiBold"
+                   Foreground="{StaticResource Blue}"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Top"
+                   Margin="20,20,22,0"/>
+
+        <TextBlock x:Name="WeekdayText"
+                   FontFamily="{StaticResource VietnamPro}"
+                   FontSize="10"
+                   FontWeight="Light"
+                   Foreground="{StaticResource Blue}"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Top"
+                   Margin="20,35,22,0"/>
+
+        <TextBlock x:Name="DateText"
+                   FontFamily="{StaticResource VietnamPro}"
+                   FontSize="10"
+                   FontWeight="Light"
+                   Foreground="{StaticResource Blue}"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Top"
+                   Margin="20,45,22,0"/>
+
+        <Border Background="{StaticResource DarkBlue}"
+                Width="260"
+                Height="515"
+                Opacity="0.25"
+                CornerRadius="15,15,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom"/>
+
+        <Grid x:Name="PopupRoot"
+              Width="55"
+              Height="182"
+              HorizontalAlignment="Right"
+              VerticalAlignment="Bottom"
+              Margin="0,0,30,53"
+              IsVisible="False"
+              ZIndex="0">
+
+            <Border Background="{StaticResource DarkBlue}"
+                    Opacity="0.25"
+                    Width="55"
+                    Height="182"
+                    CornerRadius="30,30,0,0"/>
+
+            <StackPanel Height="150"
+                        Width="55"
+                        Orientation="Vertical"
+                        Spacing="6"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Top"
+                        Margin="0,20,0,0">
+
+                <Border x:Name="IconAccount"
+                        Width="38" Height="38"
+                        CornerRadius="20"
+                        Opacity="0"
+                        Background="{StaticResource DarkBlue}">
+                    <Button Background="Transparent">
+                        <Svg Path="avares://ToDoApplication/Assets/Icons/AccountIcon.svg"
+                             Width="26" Height="26"/>
+                    </Button>
+                </Border>
+
+                <Border x:Name="IconSettings"
+                        Width="38" Height="38"
+                        CornerRadius="20"
+                        Opacity="0"
+                        Background="{StaticResource DarkBlue}">
+                    <Button Background="Transparent">
+                        <Svg Path="avares://ToDoApplication/Assets/Icons/SettingsIcon.svg"
+                             Width="26" Height="26"/>
+                    </Button>
+                </Border>
+
+                <Border x:Name="IconEdit"
+                        Width="38" Height="38"
+                        CornerRadius="20"
+                        Opacity="0"
+                        Background="{StaticResource DarkBlue}">
+                    <Button Background="Transparent">
+                        <Svg Path="avares://ToDoApplication/Assets/Icons/EditIcon.svg"
+                             Width="26" Height="26"/>
+                    </Button>
+                </Border>
+
+            </StackPanel>
+
+        </Grid>
+
+        <Border Width="55"
+                Height="57"
+                Background="{StaticResource DarkBlue}"
+                CornerRadius="40"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Margin="0,0,30,25"
+                ZIndex="1">
+
+            <Grid HorizontalAlignment="Center"
+                  VerticalAlignment="Center">
+
+                <Button x:Name="MenuButton"
+                        Background="Transparent"
+                        Click="MenuButtonOpen">
+                    <Svg Path="avares://ToDoApplication/Assets/Icons/MenuIcon.svg"
+                         Width="30" Height="30"/>
+                </Button>
+
+            </Grid>
+        </Border>
+
+        <Border Width="109"
+                Height="57"
+                Background="{StaticResource DarkBlue}"
+                CornerRadius="40"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Margin="30,0,0,25">
+
+            <StackPanel Orientation="Horizontal"
+                        Spacing="10"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+
+                <Border Width="38"
+                        Height="38"
+                        CornerRadius="20"
+                        Background="{StaticResource WhiteBrush}">
+                    <Button Background="Transparent"
+                            Click="FinishedTasksWindow">
+                        <Svg Path="avares://ToDoApplication/Assets/Icons/HistoryIcon.svg"
+                             Width="26" Height="26"/>
+                    </Button>
+                </Border>
+
+                <Border Width="38"
+                        Height="38"
+                        CornerRadius="20"
+                        Background="{StaticResource WhiteBrush}">
+                    <Button Background="Transparent"
+                            Click="AddTaskWindow">
+                        <Svg Path="avares://ToDoApplication/Assets/Icons/PlusIcon.svg"
+                             Width="26" Height="26"/>
+                    </Button>
+                </Border>
+
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</UserControl>

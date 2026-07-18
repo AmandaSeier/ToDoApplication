@@ -1,0 +1,32 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ToDoApplication.Views.AddTaskView">
+
+    <Grid>
+
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0%,0%" EndPoint="0%,100%">
+                <GradientStop Color="{StaticResource WhiteColor}" Offset="0.0"/>
+                <GradientStop Color="{StaticResource AquaColor}" Offset="1.0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Button Content="Tilbage"
+                FontFamily="{StaticResource VietnamPro}"
+                FontStyle="Italic"
+                FontWeight="Regular"
+                Click="BackButton_Click"
+                Background="Transparent"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Margin="20,20,20,20"/>
+
+        <StackPanel VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Spacing="10">
+
+        </StackPanel>
+
+    </Grid>
+
+</UserControl>

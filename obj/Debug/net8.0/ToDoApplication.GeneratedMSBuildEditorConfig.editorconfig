@@ -49,10 +49,13 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [c:/Users/amand/OneDrive/Desktop/Andet/Kodning/ToDoApplication/Assets/Fonts/Fonts.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[c:/Users/amand/OneDrive/Desktop/Andet/Kodning/ToDoApplication/Views/AddTaskWindow.axaml]
+[c:/Users/amand/OneDrive/Desktop/Andet/Kodning/ToDoApplication/Views/AddTaskView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[c:/Users/amand/OneDrive/Desktop/Andet/Kodning/ToDoApplication/Views/FinishedTasksWindow.axaml]
+[c:/Users/amand/OneDrive/Desktop/Andet/Kodning/ToDoApplication/Views/FinishedTasksView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[c:/Users/amand/OneDrive/Desktop/Andet/Kodning/ToDoApplication/Views/HomeView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [c:/Users/amand/OneDrive/Desktop/Andet/Kodning/ToDoApplication/Views/MainWindow.axaml]
