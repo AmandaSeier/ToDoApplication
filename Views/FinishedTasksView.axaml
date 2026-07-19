@@ -19,7 +19,7 @@
         <Border Width="260"
                 Height="576"
                 Background="{StaticResource RedColor}"
-                Opacity="0.25"
+                Opacity="0.15"
                 CornerRadius="15,15,0,0"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Bottom"
